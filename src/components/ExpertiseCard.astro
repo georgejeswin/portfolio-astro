@@ -1,0 +1,26 @@
+---
+interface IProps {
+  image?: any;
+  title: string;
+  description: string;
+  border?: boolean;
+}
+
+const { image, title, description, border = false } = Astro.props as IProps;
+console.log(border);
+---
+
+<section
+  class={`flex flex-col p-[30px] items-center justify-between max-w-sm text-center ${
+    border && "border-[1px] border-gray-100"
+  }`}
+>
+  <img
+    src={image}
+    alt=""
+    class="bg-lightBlue p-[15px] rounded-full"
+    width="70px"
+  />
+  <h1 class="font-bold text-2xl font-mono mt-[40px]">{title}</h1>
+  <p class="font-mono text-md mt-[40px]">{description}</p>
+</section>

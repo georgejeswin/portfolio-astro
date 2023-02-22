@@ -1,0 +1,31 @@
+---
+import ExpertiseCard from "./ExpertiseCard.astro";
+import SystemIcon from "../../public/computer.svg";
+import ReactIcon from "../../public/react.svg";
+import NodeIcon from "../../public/nodejs.svg";
+---
+
+<section
+  class="flex items-center justify-center mt-[-80px] rounded-xl relative w-screen"
+>
+  <div
+    class="flex items-start w-screen justify-center max-w-[80vw] bg-slate-100 rounded-xl flex-wrap shadow-2xl"
+  >
+    <ExpertiseCard
+      title="Software Engineer"
+      image={SystemIcon}
+      description="Experienced in both functional and OOP: JavaScript, TypeScript, Python, Java."
+    />
+    <ExpertiseCard
+      title="Full Stack Developer"
+      image={NodeIcon}
+      border={true}
+      description="Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, and frameworks ReactJs, NextJs, NodeJs, ExpressJs, NestJs etc.    "
+    />
+    <ExpertiseCard
+      title="Mobile App Developer"
+      image={ReactIcon}
+      description="Skilled in developing hybrid mobile apps and cross-platform solutions using the React-Native framework."
+    />
+  </div>
+</section>
