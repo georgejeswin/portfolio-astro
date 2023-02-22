@@ -3,6 +3,10 @@ import ExpertiseCard from "./ExpertiseCard.astro";
 import SystemIcon from "../../public/computer.svg";
 import ReactIcon from "../../public/react.svg";
 import NodeIcon from "../../public/nodejs.svg";
+import Css from "../../public/css.svg";
+import DB from "../../public/db.svg";
+import Server from "../../public/server.svg";
+import AppStore from "../../public/appstore.svg";
 ---
 
 <section
@@ -17,15 +21,31 @@ import NodeIcon from "../../public/nodejs.svg";
       description="Experienced in both functional and OOP: JavaScript, TypeScript, Python, Java."
     />
     <ExpertiseCard
-      title="Full Stack Developer"
-      image={NodeIcon}
+      title="Web Developer"
+      image={ReactIcon}
       border={true}
-      description="Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, and frameworks ReactJs, NextJs, NodeJs, ExpressJs, NestJs etc.    "
+      description="Develops web applications with modern javascript frameworks like React Js and Next JS."
     />
     <ExpertiseCard
       title="Mobile App Developer"
+      image={AppStore}
+      description="Skilled in developing hybrid mobile apps for IOS/Android and cross-platform solutions using the React-Native framework."
+    />
+    <ExpertiseCard
+      title="Web Designer"
+      image={Css}
+      description="I design web applications using html, css and frameworks like tailwind, Bootstarap, Material UI and Antd."
+    />
+    <ExpertiseCard
+      title="Backend Developer"
+      image={NodeIcon}
+      border={true}
+      description="Writes efficent backend and web services for applications using Node JS, Express JS and NestJs."
+    />
+    <ExpertiseCard
+      title="DevOps"
       image={ReactIcon}
-      description="Skilled in developing hybrid mobile apps and cross-platform solutions using the React-Native framework."
+      description="I can deploy & optimise web applications and services in cloud. I can also automate testing and deployment of application."
     />
   </div>
 </section>
